@@ -7,7 +7,11 @@ body {
   font-family: 'Work Sans', sans-serif;
   margin: 0;
   padding: 1rem;
+  color: white;
   min-height: calc(100vh - 2rem);
+  background-image: url(assets/images/background.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 header img {
@@ -29,4 +33,15 @@ main h1 {
 main p {
   font-size: 1.5rem;
   margin-bottom: 0;
+}
+
+main .badges {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+main .badge {
+  display: flex;
+  height: 3rem;
 }
