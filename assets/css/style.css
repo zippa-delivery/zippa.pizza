@@ -110,6 +110,9 @@ main .badges {
 
 main .badge {
   display: flex;
+}
+
+main .badge img {
   height: 3rem;
 }
 
