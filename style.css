@@ -9,9 +9,6 @@ body {
   padding: 1rem;
   color: white;
   min-height: calc(100vh - 2rem);
-  background-image: url(assets/images/background.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 header img {
@@ -44,4 +41,17 @@ main .badges {
 main .badge {
   display: flex;
   height: 3rem;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.background-image img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
