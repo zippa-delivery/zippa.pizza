@@ -13,25 +13,26 @@
   <div id="app">
     <header>
       <a href="/">
-        <img src="/assets/images/logo-dark.svg" alt="Zippa">
+        <img src="/assets/images/logo.svg" alt="Zippa">
       </a>
       <button id="nav-toggle">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav>
-        <a href="/pizzerie">Le nostre pizzerie</a>
-        <a href="/jobs">Lavora con noi</a>
-        <a href="/support">Servizio clienti</a>
-      </nav>
+      <div id="nav-container">
+        <nav>
+          <a href="/pizzerias">Le nostre pizzerie</a>
+          <a href="/business">Lavora con noi</a>
+          <a href="/support">Servizio clienti</a>
+        </nav>
+      </div>
     </header>
 
     <main>
       <h1>Il nuovo modo di prenotare in pizzeria.</h1>
       <p>
-        Sta arrivando Zippa: l'applicazione che ti permette di prenotare pizze
-        da asporto senza dover chiamare la pizzeria e a qualsiasi ora del giorno.
+        Dì addio alle telefonate, ordina quando vuoi in modo semplice dall'app.
       </p>
       <div class="badges">
         <a href="https://play.google.com/store/apps/details?id=pizza.zippa.app" class="badge">
@@ -43,20 +44,22 @@
       </div>
     </main>
 
-    <footer>
-      <span>&copy; 2021 - Zippa</span>
-      <nav>
-        <a href="/privacy">Privacy</a>
-        <a href="/terms">Termini e Condizioni</a>
-      </nav>
-    </footer>
+    <img src="/assets/images/screen.png" alt="Screenshot" id="screen">
   </div>
 
-  <picture class="background-image">
+  <footer>
+    <span>&copy; 2022 - Zippa</span>
+    <nav>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Termini e Condizioni</a>
+    </nav>
+  </footer>
+
+  <!--<picture class="background-image">
     <source srcset="/assets/images/background.avif" type="image/avif">
     <source srcset="/assets/images/background.webp" type="image/webp">
     <img src="/assets/images/background.jpg">
-  </picture>
+  </picture>-->
 
   <script src="/assets/js/main.js"></script>
 </body>
