@@ -7,6 +7,24 @@
   overflow-wrap: break-word;
 }
 
+#bg {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.6;
+
+  background-image: url(/assets/images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
   margin: 0;
@@ -48,13 +66,14 @@ button:hover {
   display: grid;
   grid-template-rows: min-content auto;
   gap: 1rem;
-  padding: 1rem;
   min-height: 100vh;
   overflow-y: hidden;
 }
 
 header {
-  height: 2.2rem;
+  height: 4.2rem;
+  padding: 1rem;
+  text-transform: uppercase;
 }
 
 header,
@@ -64,9 +83,14 @@ footer {
   justify-content: space-between;
 }
 
+#nav-container {
+  width: 100%;
+}
+
 nav {
   display: flex;
   gap: 1rem;
+  justify-content: space-around;
 }
 
 header img {
@@ -79,6 +103,7 @@ header img {
   gap: 0.2rem;
   justify-content: center;
   height: 100%;
+  margin-left: auto;
 }
 
 #nav-toggle span {
@@ -91,6 +116,12 @@ main {
   display: grid;
   place-content: center;
   max-width: 60ch;
+  margin-left: auto;
+  padding: 1rem;
+}
+
+main img {
+  height: 6rem;
 }
 
 main h1 {
@@ -124,16 +155,18 @@ footer {
 #screen {
   position: absolute;
   max-width: 20%;
-  max-height: 80%;
-  right: 1rem;
-  bottom: 1rem;
-  border: 0.5rem black solid;
-  border-radius: 1rem;
+  max-height: 60%;
+  left: 0;
+  bottom: 0;
 }
 
 @media (max-width: 1000px) {
   #app {
     grid-template-rows: min-content auto 300px;
+  }
+
+  main {
+    margin: auto;
   }
 
   #screen {
