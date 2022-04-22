@@ -160,6 +160,15 @@ footer {
   bottom: 0;
 }
 
+#mail {
+  font-size: 1.2rem;
+}
+
+#mail a {
+  color: initial;
+  text-decoration: underline;
+}
+
 @media (max-width: 1000px) {
   #app {
     grid-template-rows: min-content auto 300px;
