@@ -1,0 +1,150 @@
+#app {
+  display: grid;
+  grid-template-rows: min-content auto;
+  gap: 1rem;
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  max-width: 60ch;
+  padding: 1rem;
+}
+
+main img {
+  height: 6rem;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+main p {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+main .badges {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+main .badge {
+  display: flex;
+}
+
+main .badge img {
+  height: 3rem;
+}
+
+.get-in-touch {
+  display: block;
+
+  color: white;
+  background-color: #ff1616;
+
+  margin: 1rem auto;
+  padding: 1rem;
+
+  width: max-content;
+}
+
+.get-in-touch.no-center {
+  margin: 1rem 0;
+}
+
+.cards {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.card {
+  flex: 1;
+  max-width: 35ch;
+
+  color: white;
+  background-color: #ff1616;
+
+  text-align: center;
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.card .icon {
+  font-size: 3rem;
+
+  color: #ff1616;
+  background-color: white;
+
+  margin: 1rem;
+  padding: 1rem;
+
+  border-radius: 50%;
+}
+
+.card p {
+  font-size: 1.2rem;
+
+  margin: 0;
+}
+
+.plans {
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.plans table {
+  border-collapse: collapse;
+}
+
+.plans caption {
+  font-size: xx-large;
+  font-weight: 700;
+
+  padding-bottom: 1rem;
+}
+
+.plans th {
+  font-size: large;
+}
+
+.plans th,
+.plans td {
+  text-align: center;
+
+  padding: 0.5rem;
+}
+
+.plans tbody th,
+.plans tbody td {
+  border: 1px solid black;
+}
+
+.plans sup,
+.plans tfoot {
+  color: grey;
+
+  font-size: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .cards {
+    flex-direction: column;
+  }
+}
