@@ -102,15 +102,20 @@ main .badge img {
   padding: 2rem 1rem;
 }
 
-.plans table {
-  border-collapse: collapse;
-}
-
-.plans caption {
+.plans h2 {
   font-size: xx-large;
   font-weight: 700;
 
+  margin: 0;
   padding-bottom: 1rem;
+}
+
+.plans .table-container {
+  overflow-x: auto;
+}
+
+.plans table {
+  border-collapse: collapse;
 }
 
 .plans th {
