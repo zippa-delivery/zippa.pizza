@@ -1,5 +1,14 @@
 "use strict";
 
-document.getElementById("nav-toggle").addEventListener("click", () => {
-  document.getElementById("nav-container").toggleAttribute("data-show");
+const toggle = document.getElementById("nav-toggle");
+
+toggle.addEventListener("click", () => {
+  const nav = document.getElementById("nav-container");
+
+  toggle.setAttribute(
+    'aria-label',
+    nav.hasAttribute('data-show') ? 'Apri menu' : 'Chiudi menu',
+  );
+
+  nav.toggleAttribute("data-show");
 });
