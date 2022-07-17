@@ -73,26 +73,24 @@ main .badge img {
   color: white;
   background-color: #ff1616;
 
-  text-align: center;
-
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 
 .card .icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
 
   color: #ff1616;
   background-color: white;
 
-  margin: 1rem;
   padding: 1rem;
+  margin-bottom: 1rem;
 
-  border-radius: 50%;
+  border-radius: 1rem;
 }
 
 .card p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 
   margin: 0;
 }
@@ -147,12 +145,6 @@ main .badge img {
 @media (max-width: 900px) {
   .cards {
     align-items: center;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 900px) {
-  .cards {
     flex-direction: column;
   }
 }
