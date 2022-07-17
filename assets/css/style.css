@@ -8,9 +8,9 @@
   width: 100%;
   height: 100%;
 
-  opacity: 0.6;
+  opacity: 0.3;
 
-  background-image: url(/assets/images/background.jpg);
+  background-image: url(/assets/images/background.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,6 +22,10 @@
   gap: 1rem;
   min-height: 100vh;
   overflow-y: hidden;
+}
+
+header .logo {
+  display: none;
 }
 
 #nav-container {
@@ -56,8 +60,8 @@ main {
   padding: 1rem;
 }
 
-main img {
-  height: 6rem;
+main .logo {
+  height: 4rem;
 }
 
 main h1 {
@@ -82,6 +86,15 @@ main .badge {
 
 main .badge img {
   height: 3rem;
+}
+
+main .badge.social {
+  padding: 0.5rem;
+  background-color: white;
+}
+
+main .badge.social img {
+  height: 2rem;
 }
 
 #screen {
@@ -120,6 +133,14 @@ main .badge img {
 }
 
 @media (max-width: 600px) {
+  header {
+    background-color: white;
+  }
+
+  header .logo {
+    display: block;
+  }
+
   header nav {
     display: flex;
     gap: 0.5rem;
@@ -157,6 +178,10 @@ main .badge img {
   #nav-toggle {
     display: flex;
     flex-direction: column;
+  }
+
+  main .logo {
+    display: none;
   }
 
   #screen {
