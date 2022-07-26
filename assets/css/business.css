@@ -95,53 +95,6 @@ main .badge img {
   margin: 0;
 }
 
-.plans {
-  margin: auto;
-  padding: 2rem 1rem;
-
-  width: max-content;
-  max-width: 100%;
-}
-
-.plans h2 {
-  font-size: xx-large;
-  font-weight: 700;
-
-  margin: 0;
-  padding-bottom: 1rem;
-}
-
-.plans .table-container {
-  overflow-x: auto;
-}
-
-.plans table {
-  border-collapse: collapse;
-}
-
-.plans th {
-  font-size: large;
-}
-
-.plans th,
-.plans td {
-  text-align: center;
-
-  padding: 0.5rem;
-}
-
-.plans tbody th,
-.plans tbody td {
-  border: 1px solid black;
-}
-
-.plans sup,
-.plans tfoot {
-  color: grey;
-
-  font-size: 0.8rem;
-}
-
 @media (max-width: 900px) {
   .cards {
     align-items: center;
