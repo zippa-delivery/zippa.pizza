@@ -20,36 +20,11 @@
   display: grid;
   grid-template-rows: min-content auto;
   gap: 1rem;
+
+  margin: 0 auto;
+  max-width: 1280px;
   min-height: 100vh;
   overflow-y: hidden;
-}
-
-header .logo {
-  display: none;
-}
-
-#nav-container {
-  width: 100%;
-}
-
-nav {
-  display: flex;
-  gap: 1rem;
-  justify-content: space-around;
-}
-
-#nav-toggle {
-  display: none;
-  gap: 0.2rem;
-  justify-content: center;
-  height: 100%;
-  margin-left: auto;
-}
-
-#nav-toggle span {
-  width: 1rem;
-  height: 0.1rem;
-  background-color: black;
 }
 
 main {
@@ -143,15 +118,6 @@ main .badge.social img {
   bottom: 0;
 }
 
-#mail {
-  font-size: 1.2rem;
-}
-
-#mail a {
-  color: initial;
-  text-decoration: underline;
-}
-
 @media (max-width: 1000px) {
   main {
     margin: auto;
@@ -174,53 +140,6 @@ main .badge.social img {
 }
 
 @media (max-width: 600px) {
-  header {
-    background-color: white;
-  }
-
-  header .logo {
-    display: block;
-  }
-
-  header nav {
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: column;
-    color: black;
-    background-color: white;
-    padding: 1rem;
-  }
-
-  header nav a {
-    padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-  }
-
-  header nav a:focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
-  }
-
-  #nav-container {
-    /* 4.2rem: header height: 2rem of padding and 2.2rem of actual height */
-  
-    width: 100%;
-    height: calc(100% - 4.2rem);
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 4.2rem;
-    left: 0;
-    z-index: 1;
-  }
-  
-  #nav-container:not([data-show]) {
-    display: none;
-  }
-
-  #nav-toggle {
-    display: flex;
-    flex-direction: column;
-  }
-
   main .logo {
     display: none;
   }
