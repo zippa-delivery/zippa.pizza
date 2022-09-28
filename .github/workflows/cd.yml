@@ -1,0 +1,54 @@
+name: CD (admin)
+
+on:
+  push:
+    paths:
+      - '.github/workflows/scripts/init.sh'
+      - '.github/workflows/cd_admin.yml'
+      - 'apps/admin/**'
+      - 'libs/**'
+    branches:
+      - 'main'
+
+env:
+  NODE_VERSION: '16.16.0'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3.0.2
+
+      - name: setup
+        uses: actions/setup-node@v3.4.1
+        with:
+          cache: 'npm'
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: dependencies
+        run: npm ci
+
+      - name: build
+        run: npm run build
+
+      - name: upload
+        uses: actions/upload-pages-artifact@v1.0.4
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: deploy
+        id: deployment
+        uses: actions/deploy-pages@v1.2.1
