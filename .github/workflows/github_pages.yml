@@ -1,12 +1,7 @@
-name: CD (admin)
+name: GitHub Pages
 
 on:
   push:
-    paths:
-      - '.github/workflows/scripts/init.sh'
-      - '.github/workflows/cd_admin.yml'
-      - 'apps/admin/**'
-      - 'libs/**'
     branches:
       - 'main'
 
