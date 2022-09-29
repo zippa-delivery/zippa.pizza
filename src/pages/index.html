@@ -18,21 +18,7 @@
 
 <body>
   <div id="app">
-    <header>
-      <a class="logo" href="/">
-        <img src="/assets/images/logo.svg" alt="Zippa">
-      </a>
-      <button id="nav-toggle" aria-label="Apri menu">
-        <span></span>
-        <span></span>
-      </button>
-      <div id="nav-container">
-        <nav>
-          <a href="/business">Diventa pizzeria Zippa</a>
-          <a href="mailto:zippa.app@gmail.com">Contattaci</a>
-        </nav>
-      </div>
-    </header>
+    {{> header showBusinessLink=true }}
 
     <main>
       <img class="logo" src="/assets/images/logo.svg" alt="Zippa">
@@ -119,46 +105,7 @@
     </div>
   </div>
 
-  <footer>
-    <nav>
-      <div class="nav-section">
-        <h3>Zippa</h3>
-        <a href="/privacy">Privacy</a>
-      </div>
-      <div class="nav-section">
-        <h3>Seguici su</h3>
-        <a href="https://facebook.com/zippa.fb">
-          <img src="/assets/images/facebook.webp" alt="Facebook">
-          Facebook
-        </a>
-        <a href="https://instagram.com/zippa_ig">
-          <img src="/assets/images/instagram.webp" alt="Instagram">
-          Instagram
-        </a>
-      </div>
-      <div class="nav-section badges">
-        <h3>Scarica l'app</h3>
-        <a href="https://play.google.com/store/apps/details?id=pizza.zippa.app">
-          <img src="/assets/images/android.svg" alt="Android">
-          Zippa per Android
-        </a>
-        <a href="https://apps.apple.com/it/app/id1612861595">
-          <img src="/assets/images/apple.svg" alt="Android">
-          Zippa per iOS
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=pizza.zippa.business">
-          <img src="/assets/images/android.svg" alt="Android">
-          Zippa Business per Android
-        </a>
-        <a href="https://apps.apple.com/it/app/id1612862157">
-          <img src="/assets/images/apple.svg" alt="Android">
-          Zippa Business per iOS
-        </a>
-      </div>
-    </nav>
-    <img class="logo" src="/assets/images/logo.svg" alt="Zippa">
-    <span>&copy; 2022 - Zippa</span>
-  </footer>
+  {{> footer }}
 
   <script type="module" src="/main.ts"></script>
 </body>

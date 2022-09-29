@@ -10,18 +10,18 @@
 </head>
 
 <body>
-  <header>
-    <a class="logo" href="/">
-      <img src="/assets/images/logo.svg" alt="Zippa">
-    </a>
-  </header>
+  <div id="app">
+    {{> header }}
 
-  <main>
-    <h1>Accesso confermato</h1>
-    <p>
-      Puoi ora chiudere questa pagina e tornare all'applicazione.
-    </p>
-  </main>
+    <main>
+      <h1>Accesso confermato</h1>
+      <p>
+        Puoi ora chiudere questa pagina e tornare all'applicazione.
+      </p>
+    </main>
+  </div>
+
+  {{> footer }}
 
   <script type="module" src="/sign-in-success/main.ts"></script>
 </body>

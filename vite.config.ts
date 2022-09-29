@@ -1,5 +1,6 @@
 import path from 'path';
 import type { Plugin, UserConfig, ViteDevServer } from 'vite';
+import handlebars from 'vite-plugin-handlebars';
 
 const pages = {
   main: '',
@@ -45,5 +46,10 @@ export default {
     },
   },
   server: { open: true },
-  plugins: [IndexHtmlPlugin],
+  plugins: [
+    IndexHtmlPlugin,
+    handlebars({
+      partialDirectory: path.resolve(__dirname, 'src', 'components'),
+    }),
+  ],
 } as UserConfig;

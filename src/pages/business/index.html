@@ -18,11 +18,7 @@
 
 <body>
   <div id="app">
-    <header>
-      <a class="logo" href="/">
-        <img src="/assets/images/logo.svg" alt="Zippa">
-      </a>
-    </header>
+    {{> header }}
 
     <main>
       <h1>Diventa pizzeria Zippa</h1>
@@ -82,12 +78,7 @@
     Richiedi informazioni
   </a>
 
-  <footer>
-    <span>&copy; 2022 - Zippa</span>
-    <nav>
-      <a href="/privacy">Privacy</a>
-    </nav>
-  </footer>
+  {{> footer }}
 
   <script type="module" src="/business/main.ts"></script>
 </body>

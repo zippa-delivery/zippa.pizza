@@ -10,19 +10,19 @@
 </head>
 
 <body>
-  <header>
-    <a class="logo" href="/">
-      <img src="/assets/images/logo.svg" alt="Zippa">
-    </a>
-  </header>
+  <div id="app">
+    {{> header }}
 
-  <main>
-    <h1>Errore di accesso</h1>
-    <p>
-      Questo può essere dovuto ad un link scaduto, oppure alla già avvenuta
-      conferma di questo accesso.
-    </p>
-  </main>
+    <main>
+      <h1>Errore di accesso</h1>
+      <p>
+        Questo può essere dovuto ad un link scaduto, oppure alla già avvenuta
+        conferma di questo accesso.
+      </p>
+    </main>
+  </div>
+
+  {{> footer }}
 
   <script type="module" src="/sign-in-error/main.ts"></script>
 </body>
