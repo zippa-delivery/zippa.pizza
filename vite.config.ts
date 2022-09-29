@@ -1,8 +1,34 @@
 import path from 'path';
-import type { UserConfig } from 'vite';
+import type { Plugin, UserConfig, ViteDevServer } from 'vite';
+
+const pages = {
+  main: '',
+  business: 'business',
+  privacy: 'privacy',
+  signInError: 'sign-in-error',
+  signInSuccess: 'sign-in-success',
+} as const;
 
 const resolvePage = (page: string) =>
   path.resolve(__dirname, `src/pages/${page}/index.html`);
+
+const IndexHtmlPlugin: Plugin = {
+  name: 'index-html',
+  apply: ({ mode }) => mode === 'development',
+  configureServer: (server: ViteDevServer) => {
+    Object
+      .entries(pages)
+      .map(([name, path]) => {
+        server.middlewares.use((req, res, next) => {
+          if (req.url === `/${path}`) {
+            req.url += '/index.html';
+          }
+
+          next()
+        });
+      });
+  }
+};
 
 export default {
   appType: 'mpa',
@@ -12,14 +38,12 @@ export default {
     outDir: path.resolve(__dirname, 'dist'),
     emptyOutDir: true,
     rollupOptions: {
-      input: {
-        main: resolvePage(''),
-        business: resolvePage('business'),
-        privacy: resolvePage('privacy'),
-        signInError: resolvePage('sign-in-error'),
-        signInSuccess: resolvePage('sign-in-success'),
-      },
+      input: Object
+        .entries(pages)
+        .map(([name, path]) => ({ [name]: resolvePage(path) }))
+        .reduce((prev, curr) => ({ ...prev, ...curr }), {}),
     },
   },
   server: { open: true },
+  plugins: [IndexHtmlPlugin],
 } as UserConfig;
