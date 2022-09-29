@@ -150,52 +150,6 @@ main .badge.social img {
   }
 }
 
-footer {
-  padding: 2rem;
-
-  color: #717e8f;
-
-  nav {
-    display: flex;
-    justify-content: space-around;
-    gap: 3rem;
-
-    width: 80%;
-
-    .nav-section {
-      h3 {
-        margin: 0;
-        margin-bottom: 1.2em;
-
-        font-size: 1.2em;
-        font-weight: 600;
-      }
-
-      a {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        width: max-content;
-        margin-bottom: 1em;
-
-        &:hover {
-          text-decoration: underline;
-        }
-
-        img {
-          width: 1em;
-          align-self: center;
-        }
-      }
-    }
-  }
-
-  .logo {
-    height: 2.5rem;
-    opacity: 0.6;
-  }
-}
-
 @media (max-width: 1280px) {
   #features {
     .feature {
