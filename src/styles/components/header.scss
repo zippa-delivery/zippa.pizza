@@ -47,7 +47,9 @@ header {
 
 @media (max-width: 600px) {
   header {
-    background-color: white;
+    &[data-nav-visible] {
+      background-color: white;
+    }
 
     nav {
       display: flex;
