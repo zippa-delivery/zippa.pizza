@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.0"
+   width="250pt"
+   height="250pt"
+   viewBox="0 0 250 250"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg6"
+   sodipodi:docname="icon2.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:export-filename="C:\zippa\static\assets\images\svg\inkscape\g4.png"
+   inkscape:export-xdpi="294.91199"
+   inkscape:export-ydpi="294.91199"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     showborder="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="2.2569546"
+     inkscape:cx="177.67305"
+     inkscape:cy="161.94389"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     units="pt"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Background"
+     style="display:inline">
+    <rect
+       style="fill:none;fill-opacity:1;stroke-width:0.75"
+       id="rect1727"
+       width="144.55319"
+       height="141.56244"
+       x="52.836685"
+       y="22.264515" />
+    <rect
+       style="fill:#ff1616;fill-opacity:1;stroke-width:0.75"
+       id="rect1729"
+       width="250"
+       height="250"
+       x="-7.1054274e-15"
+       y="-7.1054274e-15"
+       inkscape:export-filename="C:\zippa\static\assets\images\svg\inkscape\rect1729.png"
+       inkscape:export-xdpi="294.91199"
+       inkscape:export-ydpi="294.91199" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Foreground"
+     style="display:inline">
+    <g
+       transform="matrix(0.02357389,0,0,-0.02357389,32.826093,217.17391)"
+       fill="#000000"
+       stroke="none"
+       id="g4"
+       style="fill:#ff1616;fill-opacity:1"
+       inkscape:export-filename="C:\zippa\static\assets\images\svg\inkscape\g4.png"
+       inkscape:export-xdpi="147.45599"
+       inkscape:export-ydpi="147.45599">
+      <path
+         id="path2"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.999999"
+         d="m 5949.5867,6132.1314 c -7,0 -86.9662,-27.9868 -177.9662,-60.9868 -393,-143 -751.9931,-268.0266 -1416.9931,-493.0266 -297.0001,-101 -579.0348,-199.9833 -625.0349,-219.9834 -420,-184.9999 -802.9971,-530.985 -1109.997,-1005.985 -382,-588.9999 -664.0111,-1384.9948 -753.011,-2128.995 -18.0001,-146.9999 -19.9864,-491.0307 -3.9864,-522.0307 11,-19.9999 11.9955,-18.9871 44.9955,13.013 l 33.9987,32.9906 -6.0025,116.017 c -7,130.0001 8.0284,343.0021 32.0284,433.0019 22,88.0001 45.9824,127.9983 105.9824,181.9985 96,85.9999 244.001,147.9761 803.001,332.976 662,220.0001 904.0182,315.0267 1255.0183,493.0267 185.0002,94 316.9667,169.0117 439.9667,252.0117 405.0001,270.9999 754.019,738.9863 1033.0189,1381.9864 64.9999,151.0001 173.0107,440.0047 212.0106,570.0047 14,50 30.0068,101.009 35.0068,115.009 40,113 124.9712,473.9968 115.9712,494.9968 -3,8 -11.0074,14.9752 -18.0074,13.9752 z" />
+    </g>
+  </g>
+</svg>

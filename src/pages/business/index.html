@@ -8,9 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Scarica l'app business ed entra a far parte della famiglia Zippa.">
   <title>Diventa pizzeria Zippa</title>
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/business.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link
     rel="preload"
     as="style"
@@ -20,11 +18,7 @@
 
 <body>
   <div id="app">
-    <header>
-      <a href="/">
-        <img src="/assets/images/logo.svg" alt="Zippa">
-      </a>
-    </header>
+    {{> header }}
 
     <main>
       <h1>Diventa pizzeria Zippa</h1>
@@ -84,12 +78,9 @@
     Richiedi informazioni
   </a>
 
-  <footer>
-    <span>&copy; 2022 - Zippa</span>
-    <nav>
-      <a href="/privacy">Privacy</a>
-    </nav>
-  </footer>
+  {{> footer }}
+
+  <script type="module" src="/business/main.ts"></script>
 </body>
 
 </html>

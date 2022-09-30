@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'; object-src 'none';">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dì addio alle telefonate, ordina quando vuoi in modo semplice dall'app.">
+  <title>Zippa</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+
+<body>
+  <div id="app">
+    {{> header showBusinessLink=true }}
+
+    <main>
+      <img class="logo" src="/assets/images/logo.svg" alt="Zippa">
+      <h1>L'app della pizza per la pizza</h1>
+      <p>
+        Dì addio alle telefonate, ordina quando vuoi in modo semplice dall'app.
+      </p>
+      <div class="badges">
+        <a href="https://play.google.com/store/apps/details?id=pizza.zippa.app" class="badge">
+          <img src="/assets/images/google-play-badge.svg" alt="Disponibile su Google Play">
+        </a>
+        <a href="https://apps.apple.com/it/app/id1612861595" class="badge">
+          <img src="/assets/images/app-store-badge.svg" alt="Scarica su App Store">
+        </a>
+      </div>
+
+      <div class="badges">
+        <a href="https://instagram.com/zippa_ig" class="badge social">
+          <img src="/assets/images/instagram.webp" alt="Instagram">
+        </a>
+        <a href="https://facebook.com/zippa.fb" class="badge social">
+          <img src="/assets/images/facebook.webp" alt="Facebook">
+        </a>
+      </div>
+    </main>
+
+    <div id="bg"></div>
+  </div>
+
+  <div id="features">
+    <div class="feature">
+      <img src="/assets/images/checkout.webp" alt="Screenshot">
+      <div>
+        <h2>Paga subito</h2>
+        <p>
+          Paga al momento della prenotazione all'interno dell'app.
+          In pizzeria ritira solo il tuo ordine.
+        </p>
+      </div>
+    </div>
+    <div class="feature">
+      <img src="/assets/images/order.webp" alt="Screenshot">
+      <div>
+        <h2>Basta attese</h2>
+        <p>
+          Niente più attese o ritardi con l'aggiornamento in tempo reale
+          dell'ordine.
+        </p>
+      </div>
+    </div>
+    <div class="feature">
+      <img src="/assets/images/reserve-slot.webp" alt="Screenshot">
+      <div>
+        <h2>Non sai ancora cosa vuoi?</h2>
+        <p>
+          Non aspettare l'ultimo momento e rischiare di non trovare posto.
+          Prenota subito e decidi più tardi.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {{> footer }}
+
+  <script type="module" src="/main.ts"></script>
+</body>
+
+</html>

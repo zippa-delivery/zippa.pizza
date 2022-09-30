@@ -1,0 +1,143 @@
+#bg {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.3;
+
+  background-image: url(/assets/images/background.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#app {
+  display: grid;
+  grid-template-rows: min-content auto;
+  gap: 1rem;
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  max-width: 60ch;
+  margin: auto;
+  padding: 1rem;
+}
+
+main .logo {
+  height: 4rem;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+main p {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+main .badges {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+main .badge {
+  display: flex;
+}
+
+main .badge img {
+  height: 3rem;
+}
+
+main .badge.social {
+  padding: 0.5rem;
+  background-color: white;
+}
+
+main .badge.social img {
+  height: 2rem;
+}
+
+#features {
+  display: grid;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  .feature {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: salmon;
+
+    font-size: x-large;
+
+    img {
+      height: 600px;
+    }
+
+    > div {
+      max-width: 30ch;
+    }
+
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 1rem;
+    }
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  #features {
+    .feature {
+      font-size: large;
+
+      img {
+        height: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #features {
+    .feature {
+      font-size: medium;
+
+      img {
+        height: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  main .logo {
+    display: none;
+  }
+}

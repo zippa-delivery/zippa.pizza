@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
 
 * {
   outline: none;
@@ -9,7 +9,9 @@
 
 body {
   font-family: 'Work Sans', sans-serif;
-  margin: 0;
+
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
 a {
@@ -18,8 +20,9 @@ a {
   border-radius: 0.5rem;
 }
 
-a:focus {
-  color: inherit;
+a:focus-visible,
+button:focus-visible {
+  transition: box-shadow 100ms;
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
 
@@ -36,36 +39,6 @@ button {
   transition: 100ms;
 }
 
-button:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
-}
-
 button:hover {
   opacity: 0.9;
-}
-
-header {
-  height: 4.2rem;
-  padding: 1rem;
-  text-transform: uppercase;
-}
-
-header,
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header img {
-  display: block;
-  height: 2rem;
-}
-
-footer {
-  gap: 1rem;
-  padding: 1rem;
-  flex-wrap: wrap;
-
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
