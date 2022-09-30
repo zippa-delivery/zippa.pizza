@@ -69,44 +69,6 @@ main .badge.social img {
   height: 2rem;
 }
 
-.cards {
-  display: flex;
-
-  justify-content: center;
-
-  gap: 1rem;
-  padding: 2rem 1rem;
-}
-
-.card {
-  flex: 1;
-  max-width: 35ch;
-
-  color: white;
-  background-color: #ff1616;
-
-  padding: 1rem;
-  border-radius: 1rem;
-}
-
-.card .icon {
-  font-size: 2rem;
-
-  color: #ff1616;
-  background-color: white;
-
-  padding: 1rem;
-  margin-bottom: 1rem;
-
-  border-radius: 1rem;
-}
-
-.card p {
-  font-size: 1.1rem;
-
-  margin: 0;
-}
-
 #features {
   display: grid;
   gap: 1rem;
@@ -163,11 +125,6 @@ main .badge.social img {
 }
 
 @media (max-width: 900px) {
-  .cards {
-    align-items: center;
-    flex-direction: column;
-  }
-
   #features {
     .feature {
       font-size: medium;
