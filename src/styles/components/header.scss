@@ -22,7 +22,7 @@ header {
 
     a {
       padding: 0.5rem;
-      background-color: lightgray;
+      background-color: #efefef;
 
       &.primary {
         color: white;
@@ -44,7 +44,7 @@ header {
   margin-left: auto;
 
   &[data-nav-visible] {
-    background-color: lightgray;
+    background-color: #efefef;
   }
 
   span {
