@@ -47,10 +47,15 @@ main .badge img {
   padding: 1rem;
 
   width: max-content;
+
+  &.no-center {
+    margin: 1rem 0;
+  }
 }
 
-.get-in-touch.no-center {
-  margin: 1rem 0;
+.get-in-touch-title {
+  margin-bottom: 0;
+  text-align: center;
 }
 
 #features {
