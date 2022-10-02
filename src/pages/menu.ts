@@ -10,6 +10,7 @@ export const setupMenu = () => {
     );
 
     header.toggleAttribute('data-nav-visible');
+    navToggle.toggleAttribute('data-nav-visible');
     navContainer.toggleAttribute('data-show');
   };
 
