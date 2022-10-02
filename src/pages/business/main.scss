@@ -1,3 +1,7 @@
+#bg {
+  background-image: url(/assets/images/business-background.jpg);
+}
+
 main {
   display: grid;
   place-content: center;
@@ -49,47 +53,69 @@ main .badge img {
   margin: 1rem 0;
 }
 
-.cards {
-  display: flex;
-
-  justify-content: center;
-
+#features {
+  display: grid;
   gap: 1rem;
-  padding: 2rem 1rem;
-}
-
-.card {
-  flex: 1;
-  max-width: 35ch;
-
-  color: white;
-  background-color: #ff1616;
 
   padding: 1rem;
-  border-radius: 1rem;
+
+  .feature {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: salmon;
+
+    font-size: x-large;
+
+    img {
+      height: 600px;
+    }
+
+    > div {
+      max-width: 30ch;
+    }
+
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 1rem;
+    }
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
-.card .icon {
-  font-size: 2rem;
+@media (max-width: 1280px) {
+  #features {
+    .feature {
+      font-size: large;
 
-  color: #ff1616;
-  background-color: white;
-
-  padding: 1rem;
-  margin-bottom: 1rem;
-
-  border-radius: 1rem;
-}
-
-.card p {
-  font-size: 1.1rem;
-
-  margin: 0;
+      img {
+        height: 500px;
+      }
+    }
+  }
 }
 
 @media (max-width: 900px) {
-  .cards {
-    align-items: center;
-    flex-direction: column;
+  #features {
+    .feature {
+      font-size: medium;
+
+      img {
+        height: 400px;
+      }
+    }
   }
 }

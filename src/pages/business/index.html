@@ -18,7 +18,7 @@
 
 <body>
   <div id="app">
-    {{> header }}
+    {{> header showBusinessFormLink=true }}
 
     <main>
       <h1>Diventa pizzeria Zippa</h1>
@@ -46,37 +46,51 @@
         Richiedi informazioni
       </a>
     </main>
+
+    <div id="bg"></div>
   </div>
 
-  <div class="cards">
-    <div class="card">
-      <span class="icon material-symbols-outlined">shopping_bag</span>
-      <p>
-        Alleggerisci il tuo lavoro, tu pensa solo a fare le pizze,
-        gli ordini gli gestiamo noi.
-      </p>
+  <div id="features">
+    <div class="feature">
+      <img src="/assets/images/business-notification.png" alt="Screenshot">
+      <div>
+        <h2>Riduci il carico di lavoro</h2>
+        <p>
+          Alleggerisci il tuo lavoro, tu pensa solo a fare le pizze,
+          gli ordini gli gestiamo noi.
+        </p>
+      </div>
     </div>
-    <div class="card">
-      <span class="icon material-symbols-outlined">smartphone</span>
-      <p>
-        Rinnova l'immagine della tua pizzeria fornendo un servizio innovativo.
-      </p>
+    <div class="feature">
+      <img src="/assets/images/business-orders.png" alt="Screenshot">
+      <div>
+        <h2>Raggiungi nuovi clienti</h2>
+        <p>
+          Rinnova l'immagine della tua pizzeria fornendo un servizio innovativo.
+        </p>
+      </div>
     </div>
-    <div class="card">
-      <span class="icon material-symbols-outlined">bolt</span>
-      <p>
-        Velocità e facilità d'uso. Non è mai stato così facile ricevere
-        gli ordini.
-      </p>
+    <div class="feature">
+      <img src="/assets/images/business-order.png" alt="Screenshot">
+      <div>
+        <h2>Facile da utilizzare</h2>
+        <p>
+          Velocità e facilità d'uso. Non è mai stato così facile ricevere
+          gli ordini.
+        </p>
+      </div>
     </div>
   </div>
 
-  <a
-    href="https://docs.google.com/forms/d/e/1FAIpQLSf1CW6PLEXTfe3n0GoNEVJ7fYYtOUHRd_0F2Z4X7UKckwLFFw/viewform"
-    class="get-in-touch"
-  >
-    Richiedi informazioni
-  </a>
+  <div>
+    <h1 style="text-align: center;">Vuoi saperne di più?</h1>
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSf1CW6PLEXTfe3n0GoNEVJ7fYYtOUHRd_0F2Z4X7UKckwLFFw/viewform"
+      class="get-in-touch"
+    >
+      Richiedi informazioni
+    </a>
+  </div>
 
   {{> footer }}
 
