@@ -21,6 +21,11 @@
   grid-template-rows: min-content auto;
   gap: 1rem;
   min-height: 100vh;
+
+  // This class is to be used to avoid the false bottom issue
+  &.more-content {
+    min-height: 90vh;
+  }
 }
 
 main {
