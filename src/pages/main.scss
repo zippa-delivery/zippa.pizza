@@ -16,6 +16,34 @@
   background-repeat: no-repeat;
 }
 
+#promo-banner-container {
+  margin: 0 auto;
+
+  &[data-hide] {
+    display: none;
+  }
+}
+
+#promo-banner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  color: black;
+  background-color: salmon;
+
+  padding: 1rem;
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  max-width: calc(100vw - 2rem);
+
+  > span:first-child {
+    font-size: 1.5rem;
+  }
+}
+
 #app {
   display: grid;
   grid-template-rows: min-content auto;
@@ -52,6 +80,7 @@ main p {
 
 main .badges {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
 }

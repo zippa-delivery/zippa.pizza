@@ -12,6 +12,10 @@ export const setupMenu = () => {
     header.toggleAttribute('data-nav-visible');
     navToggle.toggleAttribute('data-nav-visible');
     navContainer.toggleAttribute('data-show');
+
+    document
+      .querySelector('#promo-banner-container')
+      ?.toggleAttribute('data-hide');
   };
 
   navToggle.addEventListener('click', toggle);
