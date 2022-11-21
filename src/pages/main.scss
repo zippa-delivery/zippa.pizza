@@ -16,40 +16,32 @@
   background-repeat: no-repeat;
 }
 
+#promo-banner-container {
+  margin: 0 auto;
+
+  &[data-hide] {
+    display: none;
+  }
+}
+
 #promo-banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
 
-  position: sticky;
-  top: 0;
-
   color: black;
   background-color: salmon;
 
-  margin: 0 auto;
   padding: 1rem;
   border-radius: 1rem;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 
-  width: max-content;
   max-width: calc(100vw - 2rem);
 
   > span:first-child {
     font-size: 1.5rem;
-  }
-
-  div > * {
-    display: block;
-  }
-
-  button {
-    color: inherit;
-    background-color: inherit;
-
-    padding: 0.5rem;
   }
 }
 
@@ -89,6 +81,7 @@ main p {
 
 main .badges {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
 }
