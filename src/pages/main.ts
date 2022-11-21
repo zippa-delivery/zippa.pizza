@@ -5,3 +5,9 @@ import '../styles/components/header.scss';
 import { setupMenu } from './menu';
 
 setupMenu();
+
+const closePromoBannerButton = document.querySelector('#promo-banner button');
+
+closePromoBannerButton?.addEventListener('click', () => {
+  closePromoBannerButton.parentElement?.remove();
+});

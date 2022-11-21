@@ -16,6 +16,43 @@
   background-repeat: no-repeat;
 }
 
+#promo-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  position: sticky;
+  top: 0;
+
+  color: black;
+  background-color: salmon;
+
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  width: max-content;
+  max-width: calc(100vw - 2rem);
+
+  > span:first-child {
+    font-size: 1.5rem;
+  }
+
+  div > * {
+    display: block;
+  }
+
+  button {
+    color: inherit;
+    background-color: inherit;
+
+    padding: 0.5rem;
+  }
+}
+
 #app {
   display: grid;
   grid-template-rows: min-content auto;
