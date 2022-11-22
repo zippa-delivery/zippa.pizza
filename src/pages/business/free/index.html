@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'; object-src 'none';">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carica il tuo menù gratuitamente su Zippa.">
+  <title>Carica il tuo menù</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+
+<body>
+  <div id="app" class="more-content">
+    {{> promo-banner }}
+
+    {{> header showBusinessFormLink=true }}
+
+    <main>
+      <h1>Carica il tuo menù gratuitamente su Zippa</h1>
+      <p>
+        Vuoi aumentare la visibilità della tua pizzeria ma non
+        sei ancora pronto per le ordinazioni in-app? Allora questo
+        è il servizio che fa per te!
+      </p>
+
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSf1CW6PLEXTfe3n0GoNEVJ7fYYtOUHRd_0F2Z4X7UKckwLFFw/viewform"
+        class="get-in-touch no-center"
+      >
+        Richiedi informazioni
+      </a>
+    </main>
+
+    <div id="bg"></div>
+  </div>
+
+  <div id="features">
+    <div class="feature">
+      <img src="/assets/images/external-pizzeria.webp" alt="Screenshot">
+      <div>
+        <h2>Aumenta la visibilità della tua pizzeria</h2>
+        <p>
+          Con il nuovo servizio gratuito di caricamento
+          del menù puoi rendere visibile la tua pizzeria
+          all'interno dell'app senza preoccupazioni.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h1 class="get-in-touch-title">Vuoi saperne di più?</h1>
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSf1CW6PLEXTfe3n0GoNEVJ7fYYtOUHRd_0F2Z4X7UKckwLFFw/viewform"
+      class="get-in-touch"
+    >
+      Richiedi informazioni
+    </a>
+  </div>
+
+  {{> footer }}
+
+  <script type="module" src="/business/free/main.ts"></script>
+</body>
+
+</html>

@@ -5,6 +5,7 @@ import handlebars from 'vite-plugin-handlebars';
 const pages = {
   main: '',
   business: 'business',
+  businessFree: 'business/free',
   privacy: 'privacy',
   signInError: 'sign-in-error',
   signInSuccess: 'sign-in-success',
